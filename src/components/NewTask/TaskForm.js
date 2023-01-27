@@ -13,6 +13,7 @@ const TaskForm = (props) => {
     if (enteredValue.trim().length > 0) {
       props.onEnterTask(enteredValue);
     }
+    taskInputRef.current.value = ''
   };
 
   return (
